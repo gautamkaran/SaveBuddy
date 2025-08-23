@@ -47,3 +47,26 @@ body {
     border-radius: 10px;
     border: 2px solid var(--surface-color);
 }
+
+
+/*=========================== Header ==========================*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+header svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+    user-select: none;
+}
