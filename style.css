@@ -1,5 +1,49 @@
-*{
+/* ======================= Global Styles ================= */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f0f4f8;
+    --surface-color: #ffffff;
+    --primary-color: #2563eb;
+    --primary-hover-color: #1d4ed8;
+    --danger-color: #dc2626;
+    --danger-hover-color: #b91c1c;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    padding: 1rem;
+    min-width: 400px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*========= 🎨 Custom Scrollbar Styling - Premium Look ======= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #94a3b8, #64748b);
+    border-radius: 10px;
+    border: 2px solid var(--surface-color);
 }
