@@ -40,10 +40,14 @@
         - Copy button
         - Delete button -->
     </main>
-
-    <dialog id="delete-confirm-dialog">
-        <!-- TODO: Modal for Delete Confirmation  -->
-    </dialog>
+    <button id="DeleteAll">Delete All Links</button>
+    <!-- TODO: Modal for Delete Confirmation  -->
+        <dialog id="delete-confirm-dialog" closedby="any">
+             <h2>Are you sure?</h2>
+             <p>You are about to delete al link permanently.</p>
+             <button class="confirmBtn">Confirm</button>
+             <button class="cancelBtn">Cancel</button>
+        </dialog>
     <script src="index.js"></script>
 </body>
 
