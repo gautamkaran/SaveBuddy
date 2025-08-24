@@ -70,3 +70,111 @@ header h1 {
     margin: 0;
     user-select: none;
 }
+
+/*=========================== Message Box ==========================*/
+
+.delete-all-links-btn{
+    background: var(--danger-color);
+    color: var(--surface-color);
+    font-weight: bold;
+    cursor: pointer;
+    border:none;
+    padding: .7rem .8rem;
+    border-radius: 10px;
+    text-wrap: nowrap;
+    width: fit-content;
+    transition: background 0.3s ease;
+    &:hover{
+        background: var(--danger-hover-color);
+    }
+}
+
+
+
+#delete-confirm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.8);
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    background: var(--surface-color);
+    transition: all 0.3s ease;
+}
+
+#delete-confirm-dialog[open] {
+    animation: showModal 0.3s forwards;
+    & > p{
+        margin: .7rem 0;
+        color: var(--text-secondary);
+    }
+}
+
+#delete-confirm-dialog[close] {
+    animation: hideModal 0.3s forwards;
+}
+
+
+/*Button modal*/
+#delete-confirm-dialog > button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: var(--surface-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.confirmBtn{
+    background: rgb(27, 184, 27)!important;
+    &:hover{
+        background: rgb(12, 138, 12)!important;
+    }
+}
+.cancelBtn{
+    background: var(--danger-color)!important;
+    &:hover{
+        background: var(--danger-hover-color)!important;
+    }
+}
+
+
+/*Background to open the modal*/
+#delete-confirm-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(2px);
+}
+
+/*Animation*/
+
+@keyframes showModal {
+    from {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes hideModal {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+        display: none;
+    }
+}

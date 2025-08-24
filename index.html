@@ -30,6 +30,7 @@
         <!-- TODO: input Group (title + url input fields) -->
 
         <!-- TODO: Buttons Group (Save, Save Tab, Delete ALl)-->
+        <button id="delete-all-links" class="delete-all-links-btn">Delete All Links</button>
     </section>
     <main>
         <!-- TODO: Saved Links List 
@@ -41,8 +42,12 @@
         - Delete button -->
     </main>
 
-    <dialog id="delete-confirm-dialog">
-        <!-- TODO: Modal for Delete Confirmation  -->
+    <!-- TODO: Modal for Delete Confirmation  -->
+    <dialog id="delete-confirm-dialog" closedby="any">
+        <h2>Are you sure?</h2>
+        <p>You are about to delete al link permanently.</p>
+        <button class="confirmBtn">Confirm</button>
+        <button class="cancelBtn">Cancel</button>
     </dialog>
     <script src="index.js"></script>
 </body>
