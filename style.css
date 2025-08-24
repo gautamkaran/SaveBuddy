@@ -73,7 +73,7 @@ header h1 {
 
 /*=========================== Message Box ==========================*/
 
-#DeleteAll{
+.delete-all-links-btn{
     background: var(--danger-color);
     color: var(--surface-color);
     font-weight: bold;

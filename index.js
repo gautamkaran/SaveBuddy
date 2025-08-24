@@ -1,10 +1,6 @@
-console.log('welcome to savebuddy')
-
-
-
 
 //Script for the modal
-const btnPrueba = document.getElementById('DeleteAll')
+const btnPrueba = document.getElementById('delete-all-links')
 const modalDelete = document.getElementById('delete-confirm-dialog')
 const btnConfirm = document.querySelector('.confirmBtn')
 const btnCancel = document.querySelector('.cancelBtn')
