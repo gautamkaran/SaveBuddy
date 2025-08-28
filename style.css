@@ -71,10 +71,20 @@ header h1 {
     user-select: none;
 }
 
-/*=========================== Message Box ==========================*/
-
-.delete-all-links-btn{
-    background: var(--danger-color);
+/*=========================== Button Group ==========================*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button-group{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr ;
+     gap: 8px;
+     flex-shrink: 0;
+}
+.btn{
     color: var(--surface-color);
     font-weight: bold;
     cursor: pointer;
@@ -82,8 +92,19 @@ header h1 {
     padding: .7rem .8rem;
     border-radius: 10px;
     text-wrap: nowrap;
-    width: fit-content;
     transition: background 0.3s ease;
+}
+.save-link,
+.save-tab{
+    background: var(--primary-color);
+}
+.save-link:hover,
+.save-tab:hover{
+    background: var(--primary-hover-color);
+}
+.delete-all-links{
+    background: var(--danger-color);
+   
     &:hover{
         background: var(--danger-hover-color);
     }

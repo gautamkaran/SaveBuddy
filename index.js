@@ -1,5 +1,7 @@
 
 //Script for the modal
+const saveTabBtn = document.getElementById("save-tab-btn");
+const saveLinkBtn = document.getElementById("save-link-btn");
 const btnPrueba = document.getElementById('delete-all-links')
 const modalDelete = document.getElementById('delete-confirm-dialog')
 const btnConfirm = document.querySelector('.confirmBtn')
@@ -33,4 +35,12 @@ btnConfirm.addEventListener('click', () => {
 //Add animation to close the modal
 btnCancel.addEventListener('click', () => {
   closeModal()
+})
+
+
+saveLinkBtn.addEventListener('click', ()=>{
+  console.log('save link')
+})
+saveTabBtn.addEventListener('click', ()=>{
+  console.log('save tab click')
 })
