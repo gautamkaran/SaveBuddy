@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaveBuddy</title>
+<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -48,6 +49,57 @@
         </div>
     </div>
 
+=======
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            fill="currentColor" 
+            role="img"
+            aria-label="SaveBuddy Logo">
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm-5 10h-2v-2H8v-2h2V7h2v2h2v2h-2v2z" />
+        </svg>
+        <h1>SaveBuddy</h1>
+    </header>
+
+    <aside id="message-box" class="message-box">
+        <!-- TODO:  Message Box  (alerts / success / errors) -->
+
+    </aside>
+
+    <section class="controls">
+        <div>
+            <input type="text" id="title-el" placeholder="Optional title...">
+            <input type="text" id="url-el" placeholder="Enter URL...">
+        </div>
+         <div class="button-group">
+             <button id="save-link-btn" class="save-link btn">Save Link</button>
+             <button id="save-tab-btn" class="save-tab btn">Save Tab</button>
+             <button id="delete-all-links" class="delete-all-links btn">Delete All Links</button>
+         </div>
+    </section>
+    <main>
+        <!-- TODO: Saved Links List 
+     ul/li structure:
+        - Each li contains:
+        - Link text (inside <a>)
+        - Edit button → On click: show input fields (for link + title) + Save + Cancel buttons
+        - Copy button
+        - Delete button -->
+    </main>
+
+    <!-- TODO: Modal for Delete Confirmation  -->
+    <dialog id="delete-confirm-dialog" closedby="any">
+        <h2>Are you sure?</h2>
+        <p>You are about to delete al link permanently.</p>
+        <button class="confirmBtn">Confirm</button>
+        <button class="cancelBtn">Cancel</button>
+    </dialog>
+>>>>>>> 3245ca5637f98f2cb1cb693fc5013b22803af8db
     <script src="index.js"></script>
 </body>
 
