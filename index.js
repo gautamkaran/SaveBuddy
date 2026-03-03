@@ -1,5 +1,7 @@
 
 //Script for the modal
+const titleEl = document.getElementById("title-el");
+const urlEl = document.getElementById("url-el");
 const saveTabBtn = document.getElementById("save-tab-btn");
 const saveLinkBtn = document.getElementById("save-link-btn");
 const btnPrueba = document.getElementById('delete-all-links')

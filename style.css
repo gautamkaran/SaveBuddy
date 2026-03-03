@@ -31,6 +31,14 @@ body {
     flex-direction: column;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+}
 
 /*========= 🎨 Custom Scrollbar Styling - Premium Look ======= */
 ::-webkit-scrollbar {
@@ -71,13 +79,33 @@ header h1 {
     user-select: none;
 }
 
+/*=========================== Input Group ==========================*/
+
+ .input-group {
+     display: flex;
+     flex-direction: column;
+     flex-shrink: 0;
+     margin-block: 1rem;
+ }
+
+ input[type="text"] {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid var(--border-color);
+     border-radius: 8px;
+     margin-block: 0.3rem;
+     outline: none;
+     font-size: 0.9rem;
+     font-family: 'Inter', sans-serif;
+     transition: border-color 0.2s, box-shadow 0.2s;
+ }
+
+ input[type="text"]:focus {
+     border-color: var(--primary-color);
+     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+ }
+
 /*=========================== Button Group ==========================*/
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .button-group{
      display: grid;
      grid-template-columns: 1fr 1fr 1fr ;
