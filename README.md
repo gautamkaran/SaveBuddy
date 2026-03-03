@@ -18,6 +18,11 @@ A simple Chrome extension to save and manage your favorite links.
 3. Click **Load unpacked** and select the SaveBuddy folder
 4. Done! Extension will appear in your toolbar
 
+
+https://github.com/user-attachments/assets/34fbcd1d-bc18-454b-9e8b-250cac82be29
+
+
+
 ## How to Use
 
 - **Save Link**: Enter URL → Click SAVE LINK
