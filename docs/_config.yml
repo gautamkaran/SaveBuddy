@@ -15,8 +15,8 @@ baseurl: "/SaveBuddy"
 
 # --- Branding -------------------------------------------------------------
 
-# Wordmark logo (bookmark icon + wordmark), shown in the sidebar header.
-logo: "/assets/images/savebuddy-logo.png"
+# The sidebar logo (bookmark icon + wordmark) is rendered as inline SVG/HTML
+# via `_includes/title.html`, matching the extension popup header.
 
 # --- Navigation / links ---------------------------------------------------
 
