@@ -37,6 +37,9 @@ search:
 
 # --- Content --------------------------------------------------------------
 
+# Site favicon (multi-size ICO built from the extension icon)
+favicon_ico: /assets/favicon.ico
+
 heading_anchors: true
 permalink: pretty
 back_to_top: true
