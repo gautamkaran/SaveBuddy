@@ -63,7 +63,6 @@ gh_edit_branch: "docs"
 # The site is built from the "docs" folder of the "docs" branch, so page paths
 # are already relative to that folder; no source prefix is needed here.
 # If the docs are ever merged to "main", switch the branch above to "main".
-gh_edit_source: ""
 gh_edit_view_mode: "edit"
 
 # --- Plugins --------------------------------------------------------------
