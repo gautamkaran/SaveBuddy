@@ -29,6 +29,26 @@
   }
 }
 
+// Sidebar footer creator name (matches the extension footer styling).
+.creator-name {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 4px;
+  font-size: 1rem;
+  color: $body-text-color;
+  text-decoration: none;
+
+  span {
+    color: lab(70.5521% -66.5147 45.8073);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .header-actions {
   display: inline-flex;
   align-items: center;
