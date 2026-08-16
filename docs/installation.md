@@ -1,29 +1,33 @@
 ---
 layout: default
 title: Installation
-nav_order: 4
+nav_order: 3
 ---
 
 # Installation
 
-SaveBuddy can currently be installed as an unpacked Chrome extension.
+SaveBuddy is a Manifest V3 Chrome extension distributed as source code. It is
+installed as an **unpacked extension**. There is no Chrome Web Store listing
+at this time.
 
 ## Requirements
 
-- Google Chrome
-- SaveBuddy source code
+- Google Chrome (or a Chromium-based browser)
+- The SaveBuddy source code
 
-## 1. Download the repository
+## 1. Get the source code
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/gautamkaran/SaveBuddy.git
 ```
 
-Or download the repository as a ZIP file.
+Or download the repository as a ZIP file and extract it.
 
-## 2. Open Chrome Extensions
+## 2. Open the Chrome Extensions page
 
-Go to:
+Open Chrome and go to:
 
 ```text
 chrome://extensions/
@@ -31,21 +35,19 @@ chrome://extensions/
 
 ## 3. Enable Developer mode
 
-Turn on **Developer mode**.
+Turn on **Developer mode** using the toggle in the top-right corner of the
+extensions page.
 
-## 4. Load unpacked
+## 4. Load the unpacked extension
 
-Select **Load unpacked**.
-
-## 5. Select the extension directory
-
-Select:
+Select **Load unpacked** and choose the `extension` directory inside the
+SaveBuddy repository:
 
 ```text
 SaveBuddy/extension/
 ```
 
-The extension directory should contain:
+The extension directory must contain:
 
 ```text
 extension/
@@ -57,14 +59,36 @@ extension/
     └── icons/
 ```
 
-## 6. Pin SaveBuddy
+Chrome loads the extension from the `manifest.json` in this directory. After a
+successful load, SaveBuddy appears in the **Extensions** list.
 
-Open Chrome's Extensions menu and pin SaveBuddy to your toolbar.
+## 5. Pin SaveBuddy to the toolbar
 
-## Updating
+1. Select the puzzle-piece (Extensions) icon in the Chrome toolbar.
+2. Find **SaveBuddy**.
+3. Select the pin icon so SaveBuddy stays visible in the toolbar.
 
-After changing the extension files:
+You can now open SaveBuddy from the toolbar and use the keyboard shortcut
+(see [Keyboard Shortcuts](keyboard-shortcuts.md)).
 
-1. Open `chrome://extensions/`
+## Updating the extension
+
+After you change the extension files:
+
+1. Open `chrome://extensions/`.
 2. Find SaveBuddy.
-3. Select **Reload**.
+3. Select **Reload** on the SaveBuddy card.
+
+## Troubleshooting
+
+- **"Manifest file is missing or unreadable"** — make sure you selected the
+  `extension/` folder (the one containing `manifest.json`), not the repository
+  root or an inner folder.
+- **"Errors" on the extension card** — select **Errors** on the SaveBuddy card
+  to see the error details.
+- **Extension not working after editing files** — reload the extension and
+  reopen the popup, then open `chrome://extensions/` to check for errors.
+
+> **Note:** because SaveBuddy is installed as an unpacked extension, Chrome
+> keeps it working while **Developer mode** stays enabled. The data saved by
+> the extension is stored locally in Chrome's storage for the extension.

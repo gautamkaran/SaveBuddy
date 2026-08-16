@@ -1,48 +1,104 @@
 ---
 layout: default
 title: Features
-nav_order: 3
-has_children: true
+nav_order: 2
 ---
 
 # Features
 
-SaveBuddy focuses on a small set of useful link-management features.
+SaveBuddy v1.0 focuses on a small, focused set of link-management features.
+Each feature below is implemented in the current release.
 
-## Save Link
+## Save a link manually
 
-Enter an optional title and URL, then select **SAVE LINK**.
+Save any URL with an optional title.
 
-## Save Current Tab
+- **How it works:** enter a URL in the **Enter URL** field and select
+  **SAVE LINK**. The **Optional title** field is optional — if left empty, the
+  link is saved with the title `Untitled Link`.
+- **Important:** a URL is required. SaveBuddy shows an error message if the
+  URL field is empty.
 
-Use **SAVE TAB** to save the title and URL of the currently active Chrome tab.
+## Save the current tab
 
-## Edit Links
+Save the title and URL of the currently active Chrome tab with one click.
 
-Update the title or URL of a saved link.
+- **How it works:** open the page you want to save, open SaveBuddy, and select
+  **SAVE TAB**. The active tab's title and URL are used automatically.
+- **How it is implemented:** SaveBuddy queries the active tab using the Chrome
+  `tabs` API. This is why the `tabs` permission is requested (see
+  [Permissions](permissions.md)).
 
-## Copy URL
+## Edit saved links
 
-Copy a saved URL directly to the clipboard.
+Update the title or URL of any saved link.
 
-## Delete Link
+- **How it works:** select the **Edit** (pencil) icon next to a link, change
+  the title or URL in the inline inputs, then select **Save**. Use **Cancel**
+  to discard the changes.
+- **Important:** a URL is required when saving edits. An empty title falls
+  back to `Untitled Link`.
 
-Remove an individual saved link.
+## Copy a URL
 
-## Delete All
+Copy any saved URL to the clipboard.
 
-Remove all saved links after a confirmation step.
+- **How it works:** select the **Copy** icon next to a link. The URL is copied
+  to the clipboard and a confirmation message is shown.
 
-> Deleting all saved links cannot be undone.
+## Delete a link
 
-## Website Favicons
+Remove a single saved link.
 
-Saved links can display website favicons. If a favicon cannot be loaded, a fallback icon is used.
+- **How it works:** select the **Delete** (trash) icon next to a link. The
+  link is removed immediately. There is no undo for a single link deletion.
 
-## Keyboard Shortcut
+## Delete all links
 
-Chrome allows users to configure a keyboard shortcut for opening the extension.
+Remove every saved link at once.
 
-## Local Storage
+- **How it works:** select **DELETE ALL**. A confirmation dialog is shown
+  because this action cannot be undone. Select **Delete** to confirm or
+  **Cancel** to keep your links.
+- **Important:** if there are no links to delete, SaveBuddy shows a
+  "There are no links to delete." message instead of the confirmation dialog.
 
-Saved links are kept locally by the extension. SaveBuddy v1.0 does not require an account or cloud sync.
+## Website favicons
+
+Saved links display the favicon of their website.
+
+- **How it works:** a favicon is requested for each saved URL. If the favicon
+  cannot be loaded, a fallback icon is shown instead.
+- **Note:** favicons are requested from Google's favicon service, which means a
+  network request is made when a link is rendered. See
+  [Privacy](privacy.md) for details.
+
+## Keyboard shortcut
+
+Open the SaveBuddy popup with a keyboard shortcut.
+
+- **How it works:** the extension manifest suggests `Alt+S` as the default
+  shortcut. Users can change it at `chrome://extensions/shortcuts`. See
+  [Keyboard Shortcuts](keyboard-shortcuts.md).
+- **Important:** the suggested key is a default. Chrome may apply it to a
+  different extension, or the user may already have assigned it elsewhere.
+
+## Local storage
+
+Saved links are stored locally in the extension's `localStorage` in Chrome.
+
+- **No account required** — SaveBuddy v1.0 has no accounts, no login, and no
+  cloud synchronization.
+- **Clearing data** — deleting links (or the extension) removes the saved data
+  from the browser. See [Privacy](privacy.md) for details.
+
+## What is not included in v1.0
+
+The following are **not** part of SaveBuddy v1.0 and are not advertised as
+available features:
+
+- No bookmarks or history management (no `bookmarks` or `history` permissions).
+- No cloud sync or multi-device sync.
+- No search, tagging, or categorization of saved links.
+- No Chrome Web Store listing at this time.
+- No import/export of saved links.
