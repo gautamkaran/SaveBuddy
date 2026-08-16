@@ -1,0 +1,130 @@
+// SaveBuddy docs — custom styles.
+// This file is imported by the theme's SCSS build (both light and dark
+// schemes), so theme variables are available here.
+
+// Sidebar logo: bookmark icon + wordmark (matches the extension popup header).
+.site-title .sb-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+  }
+
+  .sb-logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: $body-heading-color;
+  }
+
+  // Brighten the icon on the dark scheme's darker sidebar.
+  html[data-theme="dark"] & {
+    svg {
+      fill: #60a5fa;
+    }
+  }
+}
+
+// Sidebar footer creator name (matches the extension footer styling).
+.creator-name {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 4px;
+  font-size: 1rem;
+  color: $body-text-color;
+  text-decoration: none;
+
+  span {
+    color: lab(70.5521% -66.5147 45.8073);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header-actions {
+  display: inline-flex;
+  align-items: center;
+}
+
+.github-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-right: $sp-3;
+  padding: 0;
+  color: $body-text-color;
+  background-color: $body-background-color;
+  border: 1px solid $border-color;
+  border-radius: 0.5rem;
+  transition: border-color 120ms ease, color 120ms ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $link-color;
+    color: $link-color;
+    outline: none;
+  }
+
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-right: $sp-2;
+  padding: 0;
+  color: $body-text-color;
+  background-color: $body-background-color;
+  border: 1px solid $border-color;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $link-color;
+    color: $link-color;
+    outline: none;
+  }
+
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  // Light scheme: show the moon (click to switch to dark).
+  .icon-moon {
+    display: block;
+  }
+  .icon-sun {
+    display: none;
+  }
+
+  // Dark scheme: show the sun (click to switch to light).
+  html[data-theme="dark"] & {
+    .icon-moon {
+      display: none;
+    }
+    .icon-sun {
+      display: block;
+    }
+  }
+}

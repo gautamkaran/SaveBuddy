@@ -1,0 +1,20 @@
+$color-scheme: dark;
+
+// Dark scheme built around the SaveBuddy blue accent.
+$body-background-color: #0f172a;
+$body-heading-color: #f1f5f9;
+$body-text-color: #cbd5e1;
+$link-color: #60a5fa;
+$nav-child-link-color: #cbd5e1;
+$sidebar-color: #0f172a;
+$base-button-color: #1e293b;
+$btn-primary-color: #2563eb;
+$code-background-color: #0d1117;
+$code-linenumber-color: #e6edf3;
+$feedback-color: darken($sidebar-color, 3%);
+$table-background-color: #1e293b;
+$search-background-color: #1e293b;
+$search-result-preview-color: #cbd5e1;
+$border-color: #334155;
+
+@import "./vendor/accessible-pygments/github-dark";
