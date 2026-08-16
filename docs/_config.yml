@@ -1,0 +1,22 @@
+title: SaveBuddy
+description: Official documentation for SaveBuddy Chrome Extension
+
+remote_theme: just-the-docs/just-the-docs
+
+url: https://gautamkaran.github.io
+baseurl: /SaveBuddy
+
+aux_links:
+  "SaveBuddy on GitHub":
+    - "https://github.com/gautamkaran/SaveBuddy"
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+nav_sort: case_insensitive
+permalink: pretty
+
+footer_content: "SaveBuddy · Chrome Extension · v1.0"
+
+plugins:
+  - jekyll-remote-theme
