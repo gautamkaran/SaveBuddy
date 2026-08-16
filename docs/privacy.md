@@ -2,67 +2,54 @@
 layout: default
 title: Privacy
 nav_order: 7
+description: "SaveBuddy privacy: links stay in local storage, no account or cloud sync, and the only network requests are for favicons and fonts."
+keywords: "SaveBuddy, privacy, local storage, no account, no cloud, data"
 ---
 
 # Privacy
 
-SaveBuddy is built around a **local-first** workflow. This page describes how
-SaveBuddy v1.0 handles data, based on the extension's source code.
+SaveBuddy keeps your data on your computer. There's no account, no cloud, no tracking. Everything below is based on the extension's source code.
 
 ## No account, no sign-in
 
-SaveBuddy does not require an account and has no sign-in or authentication of
-any kind. There is no user identity, profile, or personal data collection.
+SaveBuddy has no accounts, no login, and no authentication. There's no profile, no identity, and nothing collected about you.
 
-## Where data is stored
+## Where your links are stored
 
-Saved links are stored **locally** in your browser using the extension's
-`localStorage` (key: `myLinks`). The data stays on your computer in Chrome's
-storage for the extension.
+Links are stored **locally** in your browser using the extension's `localStorage` (key: `myLinks`). The data never leaves your machine except for the two network requests below.
 
-- Deleting a link removes it from this local storage.
+- Deleting a link removes it from local storage.
 - **DELETE ALL** clears the stored links.
-- Uninstalling the extension removes the data stored by the extension.
+- Uninstalling the extension removes the data it stored.
 
-## No cloud sync or backend
+## No cloud, no backend
 
-SaveBuddy v1.0 does **not**:
+SaveBuddy does not:
 
-- provide cloud synchronization between devices,
-- send your saved links to a server,
-- use a backend service, analytics, or tracking,
-- display advertisements.
+- sync links between devices,
+- send your links to a server,
+- use a backend, analytics, or tracking,
+- show ads.
 
-## Network requests
+## The two network requests
 
-SaveBuddy v1.0 makes network requests in two cases:
+SaveBuddy reaches out to Google in exactly two cases:
 
-1. **Website favicons** — when a saved link is displayed, a favicon is
-   requested from Google's favicon service
-   (`https://www.google.com/s2/favicons?sz=64&domain_url=...`). Only the
-   saved URL's domain is sent as part of this request. If the request fails, a
-   built-in fallback icon is shown.
-2. **Google Fonts** — the popup's HTML loads the Inter and Dancing Script
-   fonts from `fonts.googleapis.com` / `fonts.gstatic.com`. This happens when
-   the popup is opened and depends on your browser's caching.
+1. **Favicons** — when a saved link is shown, a favicon is fetched from Google's favicon service (`https://www.google.com/s2/favicons?sz=64&domain_url=...`). Only the saved URL's domain is sent. If it fails, a built-in fallback icon is shown.
+2. **Fonts** — the popup loads the Inter and Dancing Script fonts from Google Fonts when it opens.
 
-These requests are made to Google, the provider of the favicon service and the
-fonts. SaveBuddy has no first-party servers.
+These go to Google, which runs the favicon service and the fonts. SaveBuddy has no servers of its own.
 
 ## Permissions
 
-SaveBuddy requests a single permission: `tabs`, which is used only to read the
-active tab's title and URL for the **SAVE TAB** feature. See
-[Permissions](permissions.md) for details.
+SaveBuddy requests a single permission, `tabs`, used only to read the active tab's title and URL for **SAVE TAB**. See [Permissions](permissions.md).
 
-## Data you can verify
-
-Everything described on this page can be checked directly in the source code:
+## Verify it in the source
 
 - Permissions: `extension/manifest.json`
-- Storage logic: `extension/index.js` (`localStorage`, key `myLinks`)
-- Favicon requests: `extension/index.js` (Google favicon service URL)
-- Fonts: `extension/index.html` (Google Fonts links)
+- Storage: `extension/index.js` (`localStorage`, key `myLinks`)
+- Favicon requests: `extension/index.js`
+- Fonts: `extension/index.html`
 
 ## Summary
 
@@ -72,9 +59,5 @@ Everything described on this page can be checked directly in the source code:
 | Cloud sync | No |
 | Backend / analytics | No |
 | Local storage | Yes (`localStorage`) |
-| Network requests | Favicons (Google) and Google Fonts only |
+| Network requests | Favicons and Google Fonts only |
 | Data tracked | None |
-
-> SaveBuddy is local-first, but "no network requests at all" would not be an
-> accurate claim: favicon and font resources are fetched from Google as
-> described above.

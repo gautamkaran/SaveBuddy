@@ -1,0 +1,7 @@
+---
+---
+
+User-agent: *
+Allow: /
+
+Sitemap: https://gautamkaran.github.io/SaveBuddy/sitemap.xml

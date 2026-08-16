@@ -2,34 +2,32 @@
 layout: default
 title: Contributing
 nav_order: 10
+description: "Contribute to SaveBuddy: development setup, testing in Chrome, and how to submit a pull request."
+keywords: "SaveBuddy, contribute, contributing, pull request, open source"
 ---
 
 # Contributing
 
-Thanks for your interest in contributing to SaveBuddy. This project is small
-and focused, and contributions that keep it simple and easy to maintain are
-very welcome.
+Thanks for wanting to help. SaveBuddy is a small project, so keep contributions simple and easy to maintain.
 
-Please also read the repository-level
-[CONTRIBUTING.md](https://github.com/gautamkaran/SaveBuddy/blob/main/CONTRIBUTING.md)
-and [CODE_OF_CONDUCT.md](https://github.com/gautamkaran/SaveBuddy/blob/main/CODE_OF_CONDUCT.md).
+Also read the repo-level [CONTRIBUTING.md](https://github.com/gautamkaran/SaveBuddy/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/gautamkaran/SaveBuddy/blob/main/CODE_OF_CONDUCT.md).
 
 ## Development setup
 
-1. **Clone the repository.**
+1. Clone the repo.
 
    ```bash
    git clone https://github.com/gautamkaran/SaveBuddy.git
    cd SaveBuddy
    ```
 
-2. **Create a branch.**
+2. Create a branch.
 
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
-3. **Make your changes.** The extension lives in `extension/`:
+3. Make your changes. The extension lives in `extension/`:
 
    ```text
    extension/
@@ -42,45 +40,41 @@ and [CODE_OF_CONDUCT.md](https://github.com/gautamkaran/SaveBuddy/blob/main/CODE
 
 ## Test in Chrome
 
-SaveBuddy is a Chrome extension, so test it in Chrome:
+Since it's a Chrome extension, test in Chrome:
 
 1. Open `chrome://extensions/`.
-2. Enable **Developer mode**.
-3. Select **Load unpacked** and choose `extension/`.
-4. Exercise your changes in the popup (save, edit, copy, delete, delete all).
-5. After editing files, select **Reload** on the SaveBuddy card and test again.
+2. Turn on **Developer mode**.
+3. Click **Load unpacked** and pick `extension/`.
+4. Try your changes in the popup (save, edit, copy, delete, delete all).
+5. After editing files, click **Reload** on the SaveBuddy card and test again.
 
 Full instructions: [Installation](installation.md).
 
 ## Submitting changes
 
 1. Commit your changes on your branch.
-2. Push the branch to your fork:
+2. Push to your fork:
 
    ```bash
    git push origin feature/your-feature-name
    ```
 
-3. Open a pull request against the `main` branch.
+3. Open a pull request against `main`.
 
 ## Guidelines
 
-- Keep the extension simple and focused. Small, understandable changes are
-  preferred over large rewrites.
-- Follow the existing code style in `extension/`.
-- Preserve the existing behavior of documented features unless the change is
-  intentional and reflected in the docs.
-- Test your changes in Chrome before opening a pull request.
-- Update the documentation when behavior changes (files in `docs/`).
-- Add a changelog entry for user-facing changes (see
-  [Changelog](changelog.md)).
-- Do not introduce features that require new permissions unless they are
-  justified — keep the permission footprint minimal.
+- Keep it simple and focused. Small, understandable changes beat big rewrites.
+- Match the existing code style in `extension/`.
+- Don't silently change documented behavior.
+- Test in Chrome before opening a PR.
+- Update the docs (files in `docs/`) when behavior changes.
+- Add a changelog entry for user-facing changes (see [Changelog](changelog.md)).
+- Avoid new permissions unless they're justified — keep the footprint minimal.
 
 ## Pull request description
 
-Describe in your pull request:
+Include:
 
-- **What changed** — a short summary of the change.
+- **What changed** — a short summary.
 - **Why it changed** — the problem it solves.
 - **How it was tested** — the steps you followed in Chrome.

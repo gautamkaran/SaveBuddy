@@ -13,6 +13,14 @@ remote_theme: just-the-docs/just-the-docs
 url: "https://gautamkaran.github.io"
 baseurl: "/SaveBuddy"
 
+# --- SEO -------------------------------------------------------------------
+
+# Shared Open Graph / social preview image (the SaveBuddy icon).
+image: "/assets/images/savebuddy-icon.png"
+
+twitter:
+  card: summary
+
 # --- Branding -------------------------------------------------------------
 
 # The sidebar logo (bookmark icon + wordmark) is rendered as inline SVG/HTML
@@ -69,3 +77,5 @@ gh_edit_view_mode: "edit"
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap

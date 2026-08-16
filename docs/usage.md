@@ -2,75 +2,67 @@
 layout: default
 title: Usage
 nav_order: 4
+description: "Use SaveBuddy step by step: save a link, save the current tab, edit, copy, or delete links from the popup."
+keywords: "SaveBuddy, usage, save link, save tab, edit link, delete link"
 ---
 
 # Usage
 
-This guide covers the daily SaveBuddy workflow. All actions take place in the
-SaveBuddy popup, which opens from the toolbar icon (or the keyboard shortcut).
+Everything happens in the SaveBuddy popup, which opens from the toolbar icon or the keyboard shortcut.
 
-## The popup layout
+## The popup, top to bottom
 
-- **Optional title** field — enter a title for a link you save manually.
+- **Optional title** field — a title for links you save manually.
 - **Enter URL** field — the URL you want to save.
-- **SAVE LINK** — saves the link entered above.
+- **SAVE LINK** — saves the link you typed above.
 - **SAVE TAB** — saves the currently active Chrome tab.
 - **DELETE ALL** — removes every saved link (with confirmation).
-- **Link list** — every saved link, newest first, with edit, copy, and delete
-  actions.
+- **Link list** — your saved links, newest first, each with edit, copy, and delete actions.
 
 ## Save a link manually
 
 1. Open SaveBuddy from the toolbar.
-2. Enter an optional title in the **Optional title** field.
+2. Enter a title in the **Optional title** field (optional).
 3. Enter the URL in the **Enter URL** field.
-4. Select **SAVE LINK**.
+4. Click **SAVE LINK**.
 
-The link appears at the top of the list. If no title is entered, the link is
-saved as `Untitled Link`. A URL is required — an empty URL shows an error
-message.
+The link appears at the top of the list. No title? It saves as `Untitled Link`. Empty URL? You get an error message.
 
 ## Save the current tab
 
-1. Open the page you want to save.
+1. Open the page you want to keep.
 2. Open SaveBuddy.
-3. Select **SAVE TAB**.
+3. Click **SAVE TAB**.
 
-The active tab's title and URL are saved at the top of the list. This requires
-the `tabs` permission so SaveBuddy can read the active tab's title and URL
-(see [Permissions](permissions.md)).
+The active tab's title and URL are saved at the top of the list. This uses the `tabs` permission so SaveBuddy can read the tab's title and URL ([Permissions](permissions.md)).
 
 ## Edit a link
 
-1. Find the saved link in the list.
-2. Select the **Edit** (pencil) icon next to the link.
+1. Find the link in the list.
+2. Click the **Edit** (pencil) icon.
 3. Update the title and/or URL in the inline inputs.
-4. Select **Save** to apply the changes, or **Cancel** to discard them.
+4. Click **Save** to apply, or **Cancel** to keep things as they were.
 
-An empty URL is rejected when saving edits. An empty title falls back to
-`Untitled Link`.
+An empty URL is rejected when saving edits. An empty title falls back to `Untitled Link`.
 
 ## Copy a URL
 
-Select the **Copy** icon next to a saved link. The URL is copied to your
-clipboard and a confirmation message is shown.
+Click the **Copy** icon next to a link. The URL is copied to your clipboard and you get a confirmation message.
 
 ## Delete a link
 
-Select the **Delete** (trash) icon next to a saved link. The link is removed
-immediately. There is no undo for a single link deletion.
+Click the **Delete** (trash) icon. The link is gone immediately — no undo.
 
 ## Delete all links
 
-1. Select **DELETE ALL**.
-2. Confirm the action in the confirmation dialog.
+1. Click **DELETE ALL**.
+2. Confirm in the dialog.
 
-Deleting all links cannot be undone. If there are no links to delete, SaveBuddy
-shows a "There are no links to delete." message instead of the dialog.
+This can't be undone. If there's nothing to delete, you get a "There are no links to delete." message instead of the dialog.
 
 ## Keyboard shortcut
 
-The default suggested shortcut is `Alt+S`. You can change it at:
+The suggested default is `Alt+S`. Change it at:
 
 ```text
 chrome://extensions/shortcuts

@@ -2,32 +2,33 @@
 layout: default
 title: Permissions
 nav_order: 6
+description: "The permissions SaveBuddy requests: a single 'tabs' permission, what it's used for, and what the extension doesn't use."
+keywords: "SaveBuddy, permissions, tabs permission, manifest v3"
 ---
 
 # Permissions
 
-SaveBuddy requests a minimal set of permissions. This page always reflects the
-permissions declared in the current `extension/manifest.json`.
+SaveBuddy asks for as little as possible. This page reflects what's in the current `extension/manifest.json`.
 
-## Permissions requested
+## What it requests
 
-| Permission | Purpose |
+| Permission | Used for |
 |---|---|
-| `tabs` | Used by the **SAVE TAB** feature to read the title and URL of the currently active tab in the current window. |
+| `tabs` | Reading the title and URL of the active tab for **SAVE TAB**. |
 
-## What the extension does not use
+That's it. One permission.
 
-SaveBuddy does **not** request or use these common permissions:
+## What it doesn't use
 
 | Not used | Why not |
 |---|---|
-| `storage` | Saved links are kept in the extension's `localStorage`, not the `storage` API. |
-| `activeTab` | Not required — the popup uses `tabs` directly. |
-| `bookmarks` | SaveBuddy does not read or write bookmarks. |
-| `history` | SaveBuddy does not read browsing history. |
-| `cookies` / `<all_urls>` | SaveBuddy does not need access to other sites. |
+| `storage` | Links are kept in `localStorage`, not the `storage` API. |
+| `activeTab` | Not needed — the popup uses `tabs` directly. |
+| `bookmarks` | SaveBuddy doesn't touch your bookmarks. |
+| `history` | SaveBuddy doesn't read your history. |
+| `cookies` / `<all_urls>` | SaveBuddy doesn't need access to other sites. |
 
-## Verify the permissions yourself
+## Check it yourself
 
 The manifest lives at:
 
@@ -35,17 +36,12 @@ The manifest lives at:
 extension/manifest.json
 ```
 
-It is a Manifest V3 manifest and currently contains a single permission entry:
+It's a Manifest V3 manifest with a single permission entry:
 
 ```json
 "permissions": ["tabs"]
 ```
 
-> Keep this page in sync with the manifest. If a future release adds or
-> removes permissions, update the table above.
-
 ## Why the `tabs` permission?
 
-The **SAVE TAB** button saves the active tab's title and URL. Reading those
-values requires the `tabs` permission. The permission is only used when you
-use **SAVE TAB**; it does not enable monitoring of your browsing activity.
+**SAVE TAB** reads the active tab's title and URL, and Chrome requires the `tabs` permission for that. It's only used when you click **SAVE TAB** — it doesn't let anyone watch your browsing.
