@@ -53,4 +53,5 @@ Full instructions: [Installation](installation.md)
 | [Contributing](contributing.md) | How to help out |
 | [Security](security.md) | Reporting issues |
 
-Maintained by [GautamKaran](https://gautamkaran.com/).
+Made with ❤️ by
+<a href="https://gautamkaran.com/" target="_blank" rel="noopener noreferrer" class="creator-name">Gautam<span>Karan</span></a>
