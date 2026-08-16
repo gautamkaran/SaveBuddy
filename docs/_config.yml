@@ -16,7 +16,9 @@ baseurl: "/SaveBuddy"
 # --- SEO -------------------------------------------------------------------
 
 # Shared Open Graph / social preview image (the SaveBuddy icon).
-image: "/assets/images/savebuddy-icon.png"
+# `logo` is what jekyll-seo-tag uses for og:image; the sidebar still shows the
+# inline SVG logo because `_includes/title.html` is overridden.
+logo: "/assets/images/savebuddy-icon.png"
 
 twitter:
   card: summary
