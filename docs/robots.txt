@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gautamkaran.github.io/SaveBuddy/sitemap.xml
+Sitemap: https://savebuddy.gautamkaran.com/sitemap.xml

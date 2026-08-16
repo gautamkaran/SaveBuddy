@@ -8,9 +8,9 @@ description: >-
 
 remote_theme: just-the-docs/just-the-docs
 
-# GitHub Pages deployment: <user>.github.io/<repo>
-url: "https://gautamkaran.github.io"
-baseurl: "/SaveBuddy"
+# GitHub Pages deployment: served at the custom domain root.
+url: "https://savebuddy.gautamkaran.com"
+baseurl: ""
 
 # --- SEO -------------------------------------------------------------------
 
