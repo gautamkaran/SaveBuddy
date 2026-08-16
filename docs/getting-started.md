@@ -3,6 +3,7 @@ layout: default
 title: Getting Started
 nav_order: 1
 description: "Get started with SaveBuddy: what it is, what it does, and the first steps to save your first link in Chrome."
+image: "/assets/images/savebuddy-icon.png"
 keywords: "SaveBuddy, get started, Chrome extension, save first link"
 ---
 

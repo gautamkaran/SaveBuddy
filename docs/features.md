@@ -3,6 +3,7 @@ layout: default
 title: Features
 nav_order: 2
 description: "Every SaveBuddy v1.0 feature: save a link or the current tab, edit, copy, delete, favicons, keyboard shortcut, and local storage."
+image: "/assets/images/savebuddy-icon.png"
 keywords: "SaveBuddy, features, save tab, copy URL, delete links, favicons"
 ---
 

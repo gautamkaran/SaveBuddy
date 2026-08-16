@@ -3,6 +3,7 @@ layout: default
 title: Changelog
 nav_order: 9
 description: "SaveBuddy release history, including everything that shipped in the v1.0 initial release."
+image: "/assets/images/savebuddy-icon.png"
 keywords: "SaveBuddy, changelog, releases, v1.0"
 ---
 

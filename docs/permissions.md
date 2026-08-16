@@ -3,6 +3,7 @@ layout: default
 title: Permissions
 nav_order: 6
 description: "The permissions SaveBuddy requests: a single 'tabs' permission, what it's used for, and what the extension doesn't use."
+image: "/assets/images/savebuddy-icon.png"
 keywords: "SaveBuddy, permissions, tabs permission, manifest v3"
 ---
 

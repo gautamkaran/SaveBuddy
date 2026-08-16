@@ -3,6 +3,7 @@ layout: default
 title: Usage
 nav_order: 4
 description: "Use SaveBuddy step by step: save a link, save the current tab, edit, copy, or delete links from the popup."
+image: "/assets/images/savebuddy-icon.png"
 keywords: "SaveBuddy, usage, save link, save tab, edit link, delete link"
 ---
 

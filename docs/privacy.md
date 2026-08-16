@@ -3,6 +3,7 @@ layout: default
 title: Privacy
 nav_order: 7
 description: "SaveBuddy privacy: links stay in local storage, no account or cloud sync, and the only network requests are for favicons and fonts."
+image: "/assets/images/savebuddy-icon.png"
 keywords: "SaveBuddy, privacy, local storage, no account, no cloud, data"
 ---
 
