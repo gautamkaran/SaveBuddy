@@ -75,7 +75,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
   color: var(--primary-color);
   flex-shrink: 0;
@@ -435,4 +435,14 @@ footer p {
 
 .creator-name:hover {
   text-decoration: underline;
+}
+
+.github-icon {
+  position: relative;
+  color: #000000;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
 }
