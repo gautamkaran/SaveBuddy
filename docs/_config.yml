@@ -37,8 +37,9 @@ search:
 
 # --- Content --------------------------------------------------------------
 
-# Site favicon (multi-size ICO built from the extension icon)
-favicon_ico: /assets/favicon.ico
+# The favicon <link> is emitted explicitly in `_includes/head_custom.html`
+# (the theme's `favicon_ico` option only works if the file also happens to be
+# present as a static file, which is fragile — see _includes/favicon.html).
 
 heading_anchors: true
 permalink: pretty
