@@ -4,8 +4,7 @@
 
 title: SaveBuddy
 description: >-
-  Official documentation for SaveBuddy, a lightweight Chrome extension
-  for saving and managing useful web links directly from Chrome.
+  A lightweight Chrome extension for saving and organizing web links.
 
 remote_theme: just-the-docs/just-the-docs
 
