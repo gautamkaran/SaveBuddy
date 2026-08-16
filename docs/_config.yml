@@ -13,12 +13,14 @@ remote_theme: just-the-docs/just-the-docs
 url: "https://gautamkaran.github.io"
 baseurl: "/SaveBuddy"
 
+# --- Branding -------------------------------------------------------------
+
+# Wordmark logo (bookmark icon + wordmark), shown in the sidebar header.
+logo: "/assets/images/savebuddy-logo.png"
+
 # --- Navigation / links ---------------------------------------------------
 
-aux_links:
-  "SaveBuddy on GitHub":
-    - "https://github.com/gautamkaran/SaveBuddy"
-aux_links_new_tab: true
+# The GitHub link is rendered as an icon button in `_includes/header_custom.html`.
 
 # Sort sidebar navigation case-insensitively
 nav_sort: case_insensitive
@@ -57,8 +59,11 @@ last_edit_time_format: "%b %e %Y at %I:%M %p"
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/gautamkaran/SaveBuddy"
-gh_edit_branch: "main"
-gh_edit_source: "docs/"
+gh_edit_branch: "docs"
+# The site is built from the "docs" folder of the "docs" branch, so page paths
+# are already relative to that folder; no source prefix is needed here.
+# If the docs are ever merged to "main", switch the branch above to "main".
+gh_edit_source: ""
 gh_edit_view_mode: "edit"
 
 # --- Plugins --------------------------------------------------------------

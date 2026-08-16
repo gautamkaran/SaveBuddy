@@ -1,0 +1,19 @@
+$color-scheme: light;
+
+// SaveBuddy extension palette, mirrored from extension/style.css.
+$body-background-color: #ffffff; // --surface-color
+$body-heading-color: #1e293b; // --text-primary
+$body-text-color: #1e293b; // --text-primary
+$link-color: #2563eb; // --primary-color
+$nav-child-link-color: #1e293b; // --text-primary
+$sidebar-color: #f0f4f8; // --bg-color
+$base-button-color: #e2e8f0; // --border-color
+$btn-primary-color: #2563eb; // --primary-color
+$code-background-color: #ffffff; // --surface-color
+$feedback-color: darken($sidebar-color, 3%);
+$table-background-color: #ffffff; // --surface-color
+$search-background-color: #ffffff; // --surface-color
+$search-result-preview-color: #64748b; // --text-secondary
+$border-color: #e2e8f0; // --border-color
+
+@import "./vendor/accessible-pygments/github-light";
