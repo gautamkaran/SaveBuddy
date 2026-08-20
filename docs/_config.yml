@@ -79,4 +79,3 @@ gh_edit_view_mode: "edit"
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-  - jekyll-sitemap

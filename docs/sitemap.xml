@@ -1,0 +1,53 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/getting-started/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/features/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/installation/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/usage/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/keyboard-shortcuts/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/permissions/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/privacy/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/faq/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/changelog/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/contributing/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/security/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+</urlset>
