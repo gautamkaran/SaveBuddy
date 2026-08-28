@@ -41,7 +41,13 @@
   text-decoration: none;
 
   span {
-    color: lab(70.5521% -66.5147 45.8073);
+    // Split into the extension's brand green. Must clear WCAG AA (4.5:1):
+    // light sidebar (#f0f4f8) -> #166534 (6.45:1); dark sidebar (#0f172a) -> #4ade80 (10.25:1).
+    color: #166534;
+  }
+
+  html[data-theme="dark"] & span {
+    color: #4ade80;
   }
 
   &:hover {
@@ -126,5 +132,182 @@
     .icon-sun {
       display: block;
     }
+  }
+}
+
+// ===========================================================================
+// Hero section (home page)
+// ===========================================================================
+.sb-hero {
+  padding: 2rem 0 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $border-color;
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: $link-color;
+    background-color: #dbeafe; // light tint of $link-color on white
+    border: 1px solid #b8d3f3; // light border tint
+    border-radius: 999px;
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: $link-color;
+  }
+
+  &__title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  &__lead {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: $body-text-color;
+    max-width: 34rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  &__hint {
+    font-size: 0.85rem;
+    color: $body-text-color;
+    margin-bottom: 0;
+  }
+
+  kbd {
+    background-color: $base-button-color;
+    border: 1px solid $border-color;
+    border-bottom-width: 2px;
+    border-radius: 0.25rem;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.8rem;
+    font-family: inherit;
+  }
+}
+
+// ===========================================================================
+// Card grid (features + docs links)
+// ===========================================================================
+.sb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+
+  &--links {
+    margin-top: 0.5rem;
+  }
+}
+
+.sb-card {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid $border-color;
+  border-radius: 0.75rem;
+  background-color: $body-background-color;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  text-decoration: none;
+
+  h3 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.35rem;
+    font-size: 1.05rem;
+    color: $body-heading-color;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: $body-text-color;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  // interactive (docs-link) cards only
+  &--link {
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      border-color: $link-color;
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.18);
+      transform: translateY(-2px);
+      outline: none;
+      text-decoration: none;
+
+      h3 {
+        color: $link-color;
+      }
+    }
+  }
+}
+
+// ===========================================================================
+// Misc polish
+// ===========================================================================
+.btn.sb-btn {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Respect users who prefer reduced motion
+// ---------------------------------------------------------------------------
+@media (prefers-reduced-motion: reduce) {
+  .sb-card,
+  .sb-card--link,
+  .btn.sb-btn,
+  .theme-toggle,
+  .github-icon-link {
+    transition: none;
+    transform: none;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Dark-mode card polish (cards sit on a slightly darker surface)
+// ---------------------------------------------------------------------------
+html[data-theme="dark"] {
+  .sb-card {
+    background-color: #111c33; // slightly lighter than the #0f172a page bg
+    border-color: #26324d;
+  }
+
+  .sb-hero__badge {
+    background-color: #1f2c45; // light tint of #60a5fa on dark bg
+    border-color: #2b4366;
+    color: #7db4ff;
+  }
+
+  .sb-card--link:hover {
+    box-shadow: 0 4px 18px rgba(37, 99, 235, 0.25);
   }
 }
