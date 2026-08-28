@@ -13,12 +13,12 @@ Everything happens in the SaveBuddy popup, which opens from the toolbar icon or 
 
 ## The popup, top to bottom
 
-- **Optional title** field — a title for links you save manually.
-- **Enter URL** field — the URL you want to save.
-- **SAVE LINK** — saves the link you typed above.
-- **SAVE TAB** — saves the currently active Chrome tab.
-- **DELETE ALL** — removes every saved link (with confirmation).
-- **Link list** — your saved links, newest first, each with edit, copy, and delete actions.
+- **Optional title** field - a title for links you save manually.
+- **Enter URL** field - the URL you want to save.
+- **SAVE LINK** - saves the link you typed above.
+- **SAVE TAB** - saves the currently active Chrome tab.
+- **DELETE ALL** - removes every saved link (with confirmation).
+- **Link list** - your saved links, newest first, each with edit, copy, and delete actions.
 
 ## Save a link manually
 
@@ -52,7 +52,7 @@ Click the **Copy** icon next to a link. The URL is copied to your clipboard and 
 
 ## Delete a link
 
-Click the **Delete** (trash) icon. The link is gone immediately — no undo.
+Click the **Delete** (trash) icon. The link is gone immediately - no undo.
 
 ## Delete all links
 

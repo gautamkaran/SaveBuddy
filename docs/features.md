@@ -13,11 +13,11 @@ SaveBuddy v1.0 stays small and focused. Every feature below is in the current re
 
 ## Save a link manually
 
-Type a URL in the **Enter URL** field and click **SAVE LINK**. Add a title in the **Optional title** field if you want — leave it empty and it saves as `Untitled Link`. A URL is required; SaveBuddy shows an error if the field is empty.
+Type a URL in the **Enter URL** field and click **SAVE LINK**. Add a title in the **Optional title** field if you want - leave it empty and it saves as `Untitled Link`. A URL is required; SaveBuddy shows an error if the field is empty.
 
 ## Save the current tab
 
-On the page you want to keep, open SaveBuddy and click **SAVE TAB**. It takes the active tab's title and URL automatically. This is why the extension asks for the `tabs` permission — it's the only one ([Permissions](permissions.md)).
+On the page you want to keep, open SaveBuddy and click **SAVE TAB**. It takes the active tab's title and URL automatically. This is why the extension asks for the `tabs` permission - it's the only one ([Permissions](permissions.md)).
 
 ## Edit a link
 
@@ -29,7 +29,7 @@ Click the **Copy** icon next to a link. The URL goes to your clipboard and you g
 
 ## Delete a link
 
-Click the trash icon next to a link. It's removed immediately — there's no undo for a single link.
+Click the trash icon next to a link. It's removed immediately - there's no undo for a single link.
 
 ## Delete all links
 
@@ -45,7 +45,7 @@ The manifest suggests `Alt+S` to open the popup. You can change it at `chrome://
 
 ## Local storage
 
-Links are kept in the extension's `localStorage`. No account, no login, no cloud sync. Deleting links — or uninstalling the extension — clears the data ([Privacy](privacy.md)).
+Links are kept in the extension's `localStorage`. No account, no login, no cloud sync. Deleting links - or uninstalling the extension - clears the data ([Privacy](privacy.md)).
 
 ## Not in v1.0
 

@@ -36,8 +36,8 @@ SaveBuddy does not:
 
 SaveBuddy reaches out to Google in exactly two cases:
 
-1. **Favicons** — when a saved link is shown, a favicon is fetched from Google's favicon service (`https://www.google.com/s2/favicons?sz=64&domain_url=...`). Only the saved URL's domain is sent. If it fails, a built-in fallback icon is shown.
-2. **Fonts** — the popup loads the Inter and Dancing Script fonts from Google Fonts when it opens.
+1. **Favicons** - when a saved link is shown, a favicon is fetched from Google's favicon service (`https://www.google.com/s2/favicons?sz=64&domain_url=...`). Only the saved URL's domain is sent. If it fails, a built-in fallback icon is shown.
+2. **Fonts** - the popup loads the Inter and Dancing Script fonts from Google Fonts when it opens.
 
 These go to Google, which runs the favicon service and the fonts. SaveBuddy has no servers of its own.
 
@@ -54,11 +54,11 @@ SaveBuddy requests a single permission, `tabs`, used only to read the active tab
 
 ## Summary
 
-| Aspect | SaveBuddy v1.0 |
-|---|---|
-| Account required | No |
-| Cloud sync | No |
-| Backend / analytics | No |
-| Local storage | Yes (`localStorage`) |
-| Network requests | Favicons and Google Fonts only |
-| Data tracked | None |
+| Aspect              | SaveBuddy v1.0                 |
+| ------------------- | ------------------------------ |
+| Account required    | No                             |
+| Cloud sync          | No                             |
+| Backend / analytics | No                             |
+| Local storage       | Yes (`localStorage`)           |
+| Network requests    | Favicons and Google Fonts only |
+| Data tracked        | None                           |

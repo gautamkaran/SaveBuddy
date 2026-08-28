@@ -11,7 +11,7 @@ keywords: "SaveBuddy, changelog, releases, v1.0"
 
 All notable changes to SaveBuddy. This project follows [Semantic Versioning](https://semver.org/).
 
-## v1.0.0 — Initial release
+## v1.0.0 - Initial release
 
 The first release of SaveBuddy.
 
@@ -24,7 +24,7 @@ The first release of SaveBuddy.
 - Delete individual links.
 - Delete all links, with a confirmation dialog.
 - Website favicons with a built-in fallback icon.
-- Local storage via `localStorage` — no account, no cloud sync.
+- Local storage via `localStorage` - no account, no cloud sync.
 - Keyboard shortcut support (`Alt+S` suggested default) through Chrome's `_execute_action` command.
 - Manifest V3 with a single `tabs` permission.
 
@@ -40,17 +40,21 @@ The first release of SaveBuddy.
 When adding a release, only document what actually shipped.
 
 ```markdown
-## vX.Y.Z — <Short summary>
+## vX.Y.Z - <Short summary>
 
 ### Added
+
 <!-- New features -->
 
 ### Changed
+
 <!-- Behavior changes to existing features -->
 
 ### Fixed
+
 <!-- Bug fixes -->
 
 ### Removed
+
 <!-- Features that were removed -->
 ```

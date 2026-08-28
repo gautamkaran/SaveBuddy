@@ -24,19 +24,19 @@ SaveBuddy is a Chrome extension that saves links from a small popup. The idea is
 
 ## First steps
 
-1. Install SaveBuddy as an unpacked extension — see [Installation](installation.md).
+1. Install SaveBuddy as an unpacked extension - see [Installation](installation.md).
 2. Save a link: type a URL and click **SAVE LINK**, or click **SAVE TAB** for the page you're on (see [Usage](usage.md)).
 3. Edit, copy, or delete links from the popup whenever you need to.
 4. Open it quickly with the shortcut (default `Alt+S`) or the toolbar icon.
 
 ## Requirements
 
-- **Chrome** — SaveBuddy is a Manifest V3 extension for Chrome and Chromium browsers.
-- **The source code** — there's no Chrome Web Store listing yet, so you install it from source as an unpacked extension.
-- **No account** — it works fully offline and local.
+- **Chrome** - SaveBuddy is a Manifest V3 extension for Chrome and Chromium browsers.
+- **The source code** - there's no Chrome Web Store listing yet, so you install it from source as an unpacked extension.
+- **No account** - it works fully offline and local.
 
 ## Where to go next
 
-- [Installation](installation.md) — get SaveBuddy into Chrome.
-- [Usage](usage.md) — the daily workflow.
-- [Features](features.md) — the full list of what v1.0 does.
+- [Installation](installation.md) - get SaveBuddy into Chrome.
+- [Usage](usage.md) - the daily workflow.
+- [Features](features.md) - the full list of what v1.0 does.

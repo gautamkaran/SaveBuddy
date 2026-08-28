@@ -27,7 +27,7 @@ Locally in your browser, in the extension's `localStorage`. See [Privacy](privac
 
 ## Do my links sync between devices?
 
-No. SaveBuddy v1.0 has no cloud sync — links stay on the computer where you use the extension.
+No. SaveBuddy v1.0 has no cloud sync - links stay on the computer where you use the extension.
 
 ## How do I save the current tab?
 
@@ -43,7 +43,7 @@ Yes. Click the pencil icon next to a link, update the title or URL, and save.
 
 ## Can I copy a URL?
 
-Yes. Click the **Copy** icon — the URL goes to your clipboard.
+Yes. Click the **Copy** icon - the URL goes to your clipboard.
 
 ## Can I delete links?
 
@@ -59,11 +59,11 @@ No. It's built as a Chrome (Manifest V3) extension and targets Chrome and Chromi
 
 ## Is it on the Chrome Web Store?
 
-Not yet. Install it from source as an unpacked extension — see [Installation](installation.md).
+Not yet. Install it from source as an unpacked extension - see [Installation](installation.md).
 
 ## Does it collect my data?
 
-No accounts, analytics, or tracking. Links stay local. The only network requests are for favicons and Google Fonts — details in [Privacy](privacy.md).
+No accounts, analytics, or tracking. Links stay local. The only network requests are for favicons and Google Fonts - details in [Privacy](privacy.md).
 
 ## How do I report a bug?
 
@@ -71,4 +71,4 @@ Open an issue at [github.com/gautamkaran/SaveBuddy/issues](https://github.com/ga
 
 ## Can I contribute?
 
-Yes — see [Contributing](contributing.md) or the [CONTRIBUTING.md](https://github.com/gautamkaran/SaveBuddy/blob/main/CONTRIBUTING.md) file in the repo.
+Yes - see [Contributing](contributing.md) or the [CONTRIBUTING.md](https://github.com/gautamkaran/SaveBuddy/blob/main/CONTRIBUTING.md) file in the repo.

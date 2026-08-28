@@ -33,7 +33,6 @@ Please review the [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
    ```
 
 4. Test the extension in Chrome:
-
    1. Open `chrome://extensions/`.
    2. Enable **Developer mode**.
    3. Select **Load unpacked** and choose the `extension/` directory.
@@ -57,6 +56,6 @@ Please review the [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 Describe in your pull request:
 
-- **What changed** — a short summary.
-- **Why it changed** — the problem it solves.
-- **How it was tested** — the steps you followed in Chrome.
+- **What changed** - a short summary.
+- **Why it changed** - the problem it solves.
+- **How it was tested** - the steps you followed in Chrome.

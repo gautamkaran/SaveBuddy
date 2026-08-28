@@ -13,16 +13,16 @@ SaveBuddy asks for one permission and stores data locally, but software can stil
 
 ## Supported versions
 
-| Version | Supported |
-|---|---|
-| v1.x (current) | Yes |
-| Older versions | No |
+| Version        | Supported |
+| -------------- | --------- |
+| v1.x (current) | Yes       |
+| Older versions | No        |
 
 Run the latest release of both the extension and the source code.
 
 ## Reporting a vulnerability
 
-**Don't** post security issues publicly — not in the issue tracker, pull requests, or on social media.
+**Don't** post security issues publicly - not in the issue tracker, pull requests, or on social media.
 
 How to report:
 
@@ -39,7 +39,7 @@ To help us respond quickly:
 - Your Chrome/Chromium version and operating system.
 - What the vulnerability is and the impact you observed.
 - Reproduction steps, with sample input if possible.
-- A minimal proof of concept — without destructive payloads.
+- A minimal proof of concept - without destructive payloads.
 
 ## What to expect
 
@@ -50,5 +50,5 @@ To help us respond quickly:
 ## Staying safe
 
 - Only install SaveBuddy from the official repo ([github.com/gautamkaran/SaveBuddy](https://github.com/gautamkaran/SaveBuddy)) or code you've reviewed.
-- Check the permissions before installing — SaveBuddy only asks for `tabs` (see [Permissions](permissions.md)).
+- Check the permissions before installing - SaveBuddy only asks for `tabs` (see [Permissions](permissions.md)).
 - Don't paste sensitive URLs into the extension if you're worried about them showing on screen.

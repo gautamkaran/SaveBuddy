@@ -15,7 +15,7 @@ SaveBuddy uses a keyboard shortcut to open the popup. The shortcut is set up thr
 
 The manifest suggests **`Alt+S`** to open the SaveBuddy popup.
 
-> `Alt+S` is only a *suggested* default. Chrome might already use it for another extension or a browser feature. If it doesn't work for you, assign a different one below.
+> `Alt+S` is only a _suggested_ default. Chrome might already use it for another extension or a browser feature. If it doesn't work for you, assign a different one below.
 
 ## View or change the shortcut
 
@@ -32,7 +32,7 @@ The new shortcut takes effect immediately.
 
 ## How it works
 
-The shortcut is declared in `extension/manifest.json` under `commands`, using Chrome's built-in `_execute_action` command. When triggered, it opens the SaveBuddy popup — the same thing as clicking the toolbar icon.
+The shortcut is declared in `extension/manifest.json` under `commands`, using Chrome's built-in `_execute_action` command. When triggered, it opens the SaveBuddy popup - the same thing as clicking the toolbar icon.
 
 ## Notes
 

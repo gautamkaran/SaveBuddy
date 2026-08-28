@@ -70,12 +70,12 @@ Full instructions: [Installation](installation.md).
 - Test in Chrome before opening a PR.
 - Update the docs (files in `docs/`) when behavior changes.
 - Add a changelog entry for user-facing changes (see [Changelog](changelog.md)).
-- Avoid new permissions unless they're justified — keep the footprint minimal.
+- Avoid new permissions unless they're justified - keep the footprint minimal.
 
 ## Pull request description
 
 Include:
 
-- **What changed** — a short summary.
-- **Why it changed** — the problem it solves.
-- **How it was tested** — the steps you followed in Chrome.
+- **What changed** - a short summary.
+- **Why it changed** - the problem it solves.
+- **How it was tested** - the steps you followed in Chrome.

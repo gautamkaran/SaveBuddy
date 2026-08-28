@@ -9,7 +9,7 @@ keywords: "SaveBuddy, install, Chrome extension, load unpacked, developer mode"
 
 # Installation
 
-SaveBuddy is a Manifest V3 extension that ships as source code. You install it as an **unpacked extension** — there's no Chrome Web Store listing yet.
+SaveBuddy is a Manifest V3 extension that ships as source code. You install it as an **unpacked extension** - there's no Chrome Web Store listing yet.
 
 ## Requirements
 
@@ -78,8 +78,8 @@ After you change the extension files:
 
 ## Troubleshooting
 
-- **"Manifest file is missing or unreadable"** — make sure you selected the `extension/` folder (the one containing `manifest.json`), not the repo root.
-- **Errors on the card** — click **Errors** on the SaveBuddy card to see what's wrong.
-- **Changes don't apply** — reload the extension, reopen the popup, and check `chrome://extensions/` for errors.
+- **"Manifest file is missing or unreadable"** - make sure you selected the `extension/` folder (the one containing `manifest.json`), not the repo root.
+- **Errors on the card** - click **Errors** on the SaveBuddy card to see what's wrong.
+- **Changes don't apply** - reload the extension, reopen the popup, and check `chrome://extensions/` for errors.
 
 > Because SaveBuddy runs as an unpacked extension, keep **Developer mode** enabled for it to keep working. Your links are stored locally in Chrome's storage for the extension.

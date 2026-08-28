@@ -13,21 +13,21 @@ SaveBuddy asks for as little as possible. This page reflects what's in the curre
 
 ## What it requests
 
-| Permission | Used for |
-|---|---|
-| `tabs` | Reading the title and URL of the active tab for **SAVE TAB**. |
+| Permission | Used for                                                      |
+| ---------- | ------------------------------------------------------------- |
+| `tabs`     | Reading the title and URL of the active tab for **SAVE TAB**. |
 
 That's it. One permission.
 
 ## What it doesn't use
 
-| Not used | Why not |
-|---|---|
-| `storage` | Links are kept in `localStorage`, not the `storage` API. |
-| `activeTab` | Not needed — the popup uses `tabs` directly. |
-| `bookmarks` | SaveBuddy doesn't touch your bookmarks. |
-| `history` | SaveBuddy doesn't read your history. |
-| `cookies` / `<all_urls>` | SaveBuddy doesn't need access to other sites. |
+| Not used                 | Why not                                                  |
+| ------------------------ | -------------------------------------------------------- |
+| `storage`                | Links are kept in `localStorage`, not the `storage` API. |
+| `activeTab`              | Not needed - the popup uses `tabs` directly.             |
+| `bookmarks`              | SaveBuddy doesn't touch your bookmarks.                  |
+| `history`                | SaveBuddy doesn't read your history.                     |
+| `cookies` / `<all_urls>` | SaveBuddy doesn't need access to other sites.            |
 
 ## Check it yourself
 
@@ -45,4 +45,4 @@ It's a Manifest V3 manifest with a single permission entry:
 
 ## Why the `tabs` permission?
 
-**SAVE TAB** reads the active tab's title and URL, and Chrome requires the `tabs` permission for that. It's only used when you click **SAVE TAB** — it doesn't let anyone watch your browsing.
+**SAVE TAB** reads the active tab's title and URL, and Chrome requires the `tabs` permission for that. It's only used when you click **SAVE TAB** - it doesn't let anyone watch your browsing.

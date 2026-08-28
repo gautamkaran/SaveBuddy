@@ -1,4 +1,4 @@
-// SaveBuddy docs — custom styles.
+// SaveBuddy docs - custom styles.
 // This file is imported by the theme's SCSS build (both light and dark
 // schemes), so theme variables are available here.
 
@@ -73,7 +73,9 @@
   background-color: $body-background-color;
   border: 1px solid $border-color;
   border-radius: 0.5rem;
-  transition: border-color 120ms ease, color 120ms ease;
+  transition:
+    border-color 120ms ease,
+    color 120ms ease;
 
   &:hover,
   &:focus-visible {
@@ -102,7 +104,9 @@
   border: 1px solid $border-color;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: border-color 120ms ease, color 120ms ease;
+  transition:
+    border-color 120ms ease,
+    color 120ms ease;
 
   &:hover,
   &:focus-visible {

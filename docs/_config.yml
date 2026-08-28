@@ -1,4 +1,4 @@
-# SaveBuddy Documentation — Jekyll configuration
+# SaveBuddy Documentation - Jekyll configuration
 # Built with the "Just the Docs" theme for GitHub Pages.
 # Theme documentation: https://just-the-docs.github.io/just-the-docs/
 
@@ -51,7 +51,7 @@ search:
 
 # The favicon <link> is emitted explicitly in `_includes/head_custom.html`
 # (the theme's `favicon_ico` option only works if the file also happens to be
-# present as a static file, which is fragile — see _includes/favicon.html).
+# present as a static file, which is fragile - see _includes/favicon.html).
 
 heading_anchors: true
 permalink: pretty
