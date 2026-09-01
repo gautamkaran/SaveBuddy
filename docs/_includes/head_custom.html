@@ -5,7 +5,22 @@
 {% endif %}
 <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/dancing-script.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ '/assets/css/just-the-docs-dark.css' | relative_url }}" as="style">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SaveBuddy",
+  "alternateName": "SaveBuddy Chrome Extension",
+  "url": "https://savebuddy.gautamkaran.com",
+  "description": "A free, open-source Chrome extension for saving, editing, copying, and deleting web links. Everything stays local in your browser - no account, no cloud.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Person",
+    "name": "Gautam Karan",
+    "url": "https://gautamkaran.com"
+  }
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -17,7 +32,9 @@
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD"
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2099-12-31"
   },
   "softwareVersion": "1.0",
   "url": "https://savebuddy.gautamkaran.com",
