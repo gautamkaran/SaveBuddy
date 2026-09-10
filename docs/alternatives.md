@@ -4,7 +4,11 @@ title: Free Bookmark Alternatives
 nav_order: 14
 permalink: /alternatives/
 description: "Free bookmark managers and link savers for Chrome in 2026 - open source options, no-account tools, and alternatives to paid bookmark managers."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "Free Bookmark Alternatives"
 keywords: "free bookmark manager, free bookmarking tool, open source bookmark manager, no account bookmark extension"
 ---
 

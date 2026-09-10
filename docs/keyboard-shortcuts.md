@@ -3,7 +3,11 @@ layout: default
 title: Keyboard Shortcuts
 nav_order: 5
 description: "SaveBuddy keyboard shortcut: the suggested Alt+S default, and how to view or change shortcuts in Chrome."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy"
 keywords: "SaveBuddy, keyboard shortcut, Alt+S, chrome extensions shortcuts"
 ---
 

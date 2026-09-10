@@ -3,7 +3,11 @@ layout: default
 title: "How to Build a Minimal Chrome Extension in 30 Minutes (Manifest V3)"
 permalink: /blog/build-chrome-extension-manifest-v3/
 description: "Build a minimal Manifest V3 Chrome extension from scratch - a step-by-step guide with working code for a link-saving extension like SaveBuddy."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy"
 keywords: "build chrome extension, manifest v3 tutorial, chrome extension from scratch, how to make a chrome extension"
 ---
 

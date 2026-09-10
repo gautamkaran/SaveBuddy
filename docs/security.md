@@ -3,7 +3,11 @@ layout: default
 title: Security
 nav_order: 11
 description: "Report a security vulnerability in SaveBuddy, check supported versions, and see what to include in a report."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy"
 keywords: "SaveBuddy, security, vulnerability, report"
 ---
 

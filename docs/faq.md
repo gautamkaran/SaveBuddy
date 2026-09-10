@@ -3,7 +3,11 @@ layout: default
 title: FAQ
 nav_order: 8
 description: "SaveBuddy FAQ: is it free, do you need an account, where are links stored, how to save, edit, and delete links, and more."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy"
 keywords: "SaveBuddy, FAQ, chrome extension, save links, account"
 ---
 

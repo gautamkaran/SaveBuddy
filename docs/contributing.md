@@ -3,7 +3,11 @@ layout: default
 title: Contributing
 nav_order: 10
 description: "Contribute to SaveBuddy: development setup, testing in Chrome, and how to submit a pull request."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy"
 keywords: "SaveBuddy, contribute, contributing, pull request, open source"
 ---
 

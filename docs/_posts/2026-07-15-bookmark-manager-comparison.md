@@ -3,7 +3,11 @@ layout: default
 title: "Best Free Bookmark Manager: Raindrop vs Pocket vs SaveBuddy"
 permalink: /blog/bookmark-manager-comparison/
 description: "Raindrop.io vs Pocket vs SaveBuddy in 2026 - a side-by-side comparison of the best bookmark managers for Chrome, covering price, privacy, sync, and features."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy"
 keywords: "best free bookmark manager, raindrop vs pocket, bookmark manager comparison, savebuddy vs raindrop"
 ---
 

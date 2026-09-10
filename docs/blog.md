@@ -4,7 +4,11 @@ title: Blog
 nav_order: 12
 permalink: /blog/
 description: "The SaveBuddy blog: guides on saving, organizing, and managing links in Chrome - plus tips for building your own Chrome extensions."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy Blog - Guides on Saving Links"
 keywords: "SaveBuddy blog, save links, Chrome extensions, bookmarking guides"
 ---
 

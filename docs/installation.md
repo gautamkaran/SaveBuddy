@@ -3,7 +3,11 @@ layout: default
 title: Installation
 nav_order: 3
 description: "Install SaveBuddy in Chrome as an unpacked extension: get the source, load the extension folder, and pin it to the toolbar."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy"
 keywords: "SaveBuddy, install, Chrome extension, load unpacked, developer mode"
 ---
 

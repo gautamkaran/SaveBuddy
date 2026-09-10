@@ -4,7 +4,11 @@ title: SaveBuddy vs Alternatives
 nav_order: 13
 permalink: /compare/
 description: "Compare SaveBuddy with Raindrop.io, Pocket, Evernote, and Instapaper - side-by-side on price, privacy, sync, and features."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "SaveBuddy vs Alternatives"
 keywords: "SaveBuddy vs alternatives, SaveBuddy vs Raindrop, SaveBuddy vs Pocket, bookmark manager comparison"
 ---
 

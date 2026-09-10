@@ -4,7 +4,11 @@ title: Use Cases
 nav_order: 15
 permalink: /use-cases/
 description: "Real-world SaveBuddy use cases: developers, students, researchers, recruiters, and everyday users saving links locally in Chrome."
-image: "/assets/images/savebuddy-icon.png"
+image:
+  path: "/assets/images/social/savebuddy-og.png"
+  width: 1200
+  height: 630
+  alt: "Who Is SaveBuddy For - Use Cases"
 keywords: "SaveBuddy use cases, who uses SaveBuddy, save links for developers, students bookmarks, productivity"
 ---
 
