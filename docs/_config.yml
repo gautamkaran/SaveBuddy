@@ -20,7 +20,7 @@ baseurl: ""
 logo: "/assets/images/savebuddy-icon.png"
 
 twitter:
-  card: summary
+  card: summary_large_image
   username: _GautamKaran
 
 # --- Branding -------------------------------------------------------------
