@@ -3,16 +3,16 @@ layout: home
 title: SaveBuddy
 nav_exclude: true
 permalink: /
-description: "SaveBuddy docs: a lightweight Chrome extension to save, edit, copy, and delete useful links - stored locally, no account needed."
-keywords: "SaveBuddy, Chrome extension, save links, bookmarks, link manager"
+description: "SaveBuddy is a free Chrome extension to save links fast - save the current tab or any URL, edit, copy, and organize links. No account, no cloud, 100% local."
+keywords: "SaveBuddy, Chrome extension, save links, bookmark manager, save tabs, free bookmark extension, no account"
 image: "/assets/images/savebuddy-icon.png"
 ---
 
 # SaveBuddy
 
-A tiny Chrome extension for keeping the links you actually want to come back to.
+Save any URL or the current tab in one click — then edit, copy, or delete your links from a small popup. Everything stays in your browser's local storage: **no account, no cloud, no tracking.**
 
-Save any URL, save the tab you're on, then edit, copy, or delete your links from a small popup. Everything stays in your browser's local storage - no account, no cloud.
+A tiny Chrome extension for keeping the links you actually want to come back to.
 
 **Version:** `v1.0` · **License:** MIT
 
@@ -50,8 +50,17 @@ Full instructions: [Installation](installation.md)
 | [Privacy](privacy.md)                       | How your data is handled           |
 | [FAQ](faq.md)                               | Common questions                   |
 | [Changelog](changelog.md)                   | Release history                    |
-| [Contributing](contributing.md)             | How to help out                    |
+| [Contributing](contributing.md)             | How to help out                   |
 | [Security](security.md)                     | Reporting issues                   |
+
+## Guides and comparisons
+
+| Page                                            | What it covers                          |
+| ----------------------------------------------- | --------------------------------------- |
+| [Blog](blog.md)                                 | Guides on saving links & extensions     |
+| [SaveBuddy vs Alternatives](compare.md)         | How SaveBuddy compares to other tools   |
+| [Free Bookmark Alternatives](alternatives.md)   | No-account, open source options         |
+| [Use Cases](use-cases.md)                       | Who SaveBuddy is useful for             |
 
 Made with ❤️ by
 <a href="https://gautamkaran.com/" target="_blank" rel="noopener noreferrer" class="creator-name">Gautam<span>Karan</span></a>

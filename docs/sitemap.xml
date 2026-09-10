@@ -50,4 +50,36 @@
     <loc>https://savebuddy.gautamkaran.com/security/</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/blog/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/blog/best-chrome-extensions-to-save-links/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/blog/save-links-without-account/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/blog/bookmark-manager-comparison/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/blog/build-chrome-extension-manifest-v3/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/compare/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/alternatives/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  <url>
+    <loc>https://savebuddy.gautamkaran.com/use-cases/</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
 </urlset>
