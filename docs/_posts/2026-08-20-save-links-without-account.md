@@ -2,7 +2,7 @@
 layout: default
 title: "How to Save and Organize Links Without an Account"
 permalink: /blog/save-links-without-account/
-description: "How to save and organize web links with no account, no sign-up, and no cloud - local-first bookmarking tools explained."
+description: "How to save links with no account, no sign-up, and no cloud - local-first bookmarking tools explained."
 image:
   path: "/assets/images/social/savebuddy-og.png"
   width: 1200

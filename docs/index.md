@@ -3,7 +3,7 @@ layout: home
 title: "SaveBuddy - Free Chrome Extension to Save Links"
 nav_exclude: true
 permalink: /
-description: "SaveBuddy is a free Chrome extension to save links fast - save the current tab or any URL, edit, copy, and organize links. No account, no cloud, 100% local."
+description: "SaveBuddy - free Chrome extension to save links in one click. No account, no cloud, 100% local."
 keywords: "SaveBuddy, Chrome extension, save links, bookmark manager, save tabs, free bookmark extension, no account"
 image:
   path: "/assets/images/social/savebuddy-og.png"

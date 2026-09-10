@@ -2,7 +2,7 @@
 layout: default
 title: "10 Best Chrome Extensions to Save Links in 2026"
 permalink: /blog/best-chrome-extensions-to-save-links/
-description: "The 10 best Chrome extensions to save and organize links in 2026 - free options, local-first tools, and lightweight bookmark managers compared."
+description: "The 10 best Chrome extensions to save and organize links in 2026 - free and local-first tools compared."
 image:
   path: "/assets/images/social/savebuddy-og.png"
   width: 1200
