@@ -25,9 +25,12 @@
 
   if (window.jtd && typeof window.jtd.setTheme === "function") {
     var current = window.jtd.getTheme ? window.jtd.getTheme() : null;
-    // "default" is the theme's built-in stylesheet (light). Only swap when
-    // the active scheme differs, to avoid a redundant stylesheet download.
-    if (current !== theme) {
+    // "default" is the theme's built-in light stylesheet (configured via
+    // site.color_scheme), i.e. visually the same palette as "light".
+    var effective = current === "default" ? "light" : current;
+    // Only swap when the active scheme differs, to avoid a redundant
+    // stylesheet download (e.g. default.css -> light.css on every load).
+    if (effective !== theme) {
       window.jtd.setTheme(theme);
     }
   }
