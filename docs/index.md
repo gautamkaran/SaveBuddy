@@ -1,6 +1,7 @@
 ---
 layout: home
 title: "SaveBuddy - Free Chrome Extension to Save Links"
+last_modified_at: 2026-11-10
 nav_exclude: true
 permalink: /
 description: "SaveBuddy - free Chrome extension to save links in one click. No account, no cloud, 100% local."
@@ -65,6 +66,34 @@ Full instructions: [Installation](installation.md)
 | [SaveBuddy vs Alternatives](compare.md)         | How SaveBuddy compares to other tools   |
 | [Free Bookmark Alternatives](alternatives.md)   | No-account, open source options         |
 | [Use Cases](use-cases.md)                       | Who SaveBuddy is useful for             |
+
+## Why SaveBuddy
+
+Most bookmark tools ask you to create an account, install a cloud service, or hand over your reading history. SaveBuddy does none of that. It is a single popup that saves a link and keeps it in your browser.
+
+- **One click to save.** Use **SAVE TAB** for the page you're on, or paste a URL.
+- **No account.** Nothing to sign up for, nothing to log in to.
+- **No cloud.** Your links stay in your Chrome profile.
+- **No tracking.** No analytics, telemetry, or ads.
+- **Open source.** Read the code before you install it.
+
+## Privacy by default
+
+SaveBuddy stores links in `localStorage` inside the extension. It does not run on the pages you visit, does not read Chrome bookmarks or history, and asks for one permission: `tabs`, used only when you click **SAVE TAB**.
+
+The only network requests are for site favicons and Google Fonts. Details are in [Privacy](privacy.md) and [Permissions](permissions.md).
+
+## Who it's for
+
+SaveBuddy is for people who want a short, fast list of links - developers saving docs, students saving sources, researchers keeping a private reading list, and anyone who is tired of losing useful pages in a sea of tabs. See [Use Cases](use-cases.md) for examples.
+
+## Not sure where to start?
+
+1. [Install the extension](installation.md).
+2. Save one page with **SAVE TAB**.
+3. Read [Usage](usage.md) for the daily workflow.
+
+If you need folders, tags, sync, or a reading view, see [SaveBuddy vs Alternatives](compare.md) to pick the right tool.
 
 Made with ❤️ by
 <a href="https://gautamkaran.com/" target="_blank" rel="noopener noreferrer" class="creator-name">Gautam<span>Karan</span></a>

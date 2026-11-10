@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Free Bookmark Alternatives
+last_modified_at: 2026-09-10
 nav_order: 14
 permalink: /alternatives/
 description: "Free bookmark managers and link savers for Chrome in 2026 - open source options, no-account tools, and alternatives to paid bookmark managers."

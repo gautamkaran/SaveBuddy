@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Security
+last_modified_at: 2026-11-10
 nav_order: 11
 description: "Report a security vulnerability in SaveBuddy, check supported versions, and see what to include in a report."
 image:
@@ -56,3 +57,55 @@ To help us respond quickly:
 - Only install SaveBuddy from the official repo ([github.com/gautamkaran/SaveBuddy](https://github.com/gautamkaran/SaveBuddy)) or code you've reviewed.
 - Check the permissions before installing - SaveBuddy only asks for `tabs` (see [Permissions](permissions.md)).
 - Don't paste sensitive URLs into the extension if you're worried about them showing on screen.
+
+## Security model
+
+SaveBuddy's attack surface is intentionally small:
+
+- **No backend.** There is no SaveBuddy server to breach or impersonate.
+- **No content scripts.** The extension never runs on the pages you visit.
+- **No background worker.** Code only runs while the popup is open.
+- **One permission.** `tabs` is used to read the active tab's title and URL.
+- **Local data only.** Links live in the extension's `localStorage`.
+
+The main risks are therefore local: another person with access to your Chrome profile, a malicious extension with broad permissions, or a compromised copy of the source.
+
+## What counts as a security issue
+
+- A way to read or modify saved links without access to the Chrome profile.
+- A way to make the extension send link data to a third party beyond the documented favicon and font requests.
+- A bypass of Chrome's extension permission model.
+- Code execution or injection through a saved title or URL.
+- A supply-chain issue in the published source.
+
+## What is out of scope
+
+- Someone with physical access to an unlocked Chrome profile reading your links.
+- The privacy practices of Google's favicon or font services.
+- Missing features such as encryption, sync, or export.
+- Issues that require installing a modified copy of the extension.
+
+## Disclosure process
+
+1. Send a private report through the repository's **Security** tab.
+2. Include the version, browser, operating system, impact, and reproduction steps.
+3. Allow reasonable time to investigate and ship a fix before publishing details.
+4. We will credit you in the changelog if you want.
+
+Please do not open a public issue for a vulnerability, and do not include real personal links in a report. Use minimal test data.
+
+## Verifying a copy
+
+Before installing:
+
+1. Compare the repository URL with the one on this site.
+2. Read `extension/manifest.json` and confirm the permission list.
+3. Check that `extension/index.js` only writes to `localStorage` and Google's favicon endpoint.
+4. Prefer a specific commit or release over an unreviewed fork.
+
+## Staying safe on a shared computer
+
+- Use a separate Chrome profile for work or shared machines.
+- Lock your operating system account when you step away.
+- Remove the extension and its data before handing the computer to someone else.
+- Don't save links that contain tokens, private URLs, or personal information.

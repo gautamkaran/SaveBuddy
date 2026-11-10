@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Use Cases
+last_modified_at: 2026-09-10
 nav_order: 15
 permalink: /use-cases/
 description: "Real-world SaveBuddy use cases: developers, students, researchers, recruiters, and everyday users saving links locally in Chrome."

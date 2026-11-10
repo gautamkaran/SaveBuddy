@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contributing
+last_modified_at: 2026-09-10
 nav_order: 10
 description: "Contribute to SaveBuddy: development setup, testing in Chrome, and how to submit a pull request."
 image:

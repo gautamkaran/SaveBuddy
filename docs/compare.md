@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SaveBuddy vs Alternatives
+last_modified_at: 2026-09-10
 nav_order: 13
 permalink: /compare/
 description: "Compare SaveBuddy with Raindrop.io, Pocket, Evernote, and Instapaper - side-by-side on price, privacy, sync, and features."

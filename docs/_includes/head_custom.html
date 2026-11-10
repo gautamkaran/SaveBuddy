@@ -1,4 +1,5 @@
 <meta name="google-site-verification" content="6YI1ivnJW1b5cJkHIw050ALSO4-KXFl0sfWFi9rLXBE" />
+<meta name="robots" content="{{ page.robots | default: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }}">
 <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}" type="image/x-icon">
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords }}">
@@ -6,6 +7,28 @@
 <link rel="preload" href="{{ '/assets/fonts/inter.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/fonts/dancing-script.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}" as="style">
+{% unless page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ "/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }
+  ]
+}
+</script>
+{% endunless %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -13,7 +36,7 @@
   "name": "SaveBuddy",
   "description": "A lightweight Chrome extension for saving and organizing web links. Save any URL, save the tab you're on, then edit, copy, or delete your links from a small popup.",
   "applicationCategory": "BrowserApplication",
-  "operatingSystem": "Chrome",
+  "operatingSystem": "Windows, macOS, Linux, ChromeOS",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -24,7 +47,14 @@
   "screenshot": "https://savebuddy.gautamkaran.com/assets/images/savebuddy-icon.png",
   "featureList": "Save links, Save tabs, Edit links, Copy URLs, Delete links, Keyboard shortcuts, Local storage",
   "permissions": "tabs",
-  "browserRequirement": "Chrome 88+",
+  "softwareRequirements": "Google Chrome 88+ (Manifest V3)",
+  "isAccessibleForFree": true,
+  "license": "https://opensource.org/licenses/MIT",
+  "codeRepository": "https://github.com/gautamkaran/SaveBuddy",
+  "sameAs": [
+    "https://github.com/gautamkaran/SaveBuddy",
+    "https://twitter.com/_GautamKaran"
+  ],
   "author": {
     "@type": "Person",
     "name": "Gautam Karan",

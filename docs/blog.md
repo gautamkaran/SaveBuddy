@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+last_modified_at: 2026-09-10
 nav_order: 12
 permalink: /blog/
 description: "The SaveBuddy blog: guides on saving links, bookmarking, and building Chrome extensions."

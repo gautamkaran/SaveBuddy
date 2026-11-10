@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Usage
+last_modified_at: 2026-11-10
 nav_order: 4
 description: "Use SaveBuddy step by step: save a link, save the current tab, edit, copy, or delete links from the popup."
 image:
@@ -74,3 +75,50 @@ chrome://extensions/shortcuts
 ```
 
 See [Keyboard Shortcuts](keyboard-shortcuts.md) for details.
+
+## A real workflow: researching a topic
+
+1. Search the web and open the sources you want to keep in tabs.
+2. For each source, press `Alt+S` and click **SAVE TAB**.
+3. When the reading session ends, open SaveBuddy and rename each link to a short label, for example `MDN - Fetch API` or `Paper - 2024 survey`.
+4. Copy the URLs into your notes with the copy icon, or click each link to reopen it.
+5. Delete the links you no longer need so the list stays short.
+
+Because links are saved newest-first, the most recent source is always at the top.
+
+## Editing tips
+
+- Keep titles short. The popup shows one line per link, so `Docs - Auth` is easier to scan than a full page title.
+- Use a consistent prefix for related links, such as `Work -`, `Read -`, or `Buy -`. SaveBuddy has no folders, so prefixes act like lightweight categories.
+- The URL field is stored as typed. SaveBuddy checks that it isn't empty, but it does not normalize or validate the address. Include `https://` so the link opens correctly.
+- Editing is inline: click the pencil, change the fields, then click **Save**. **Cancel** leaves the original values untouched.
+
+## Open, copy, or delete
+
+- **Open** - click the link text or URL to open it in a new tab.
+- **Copy** - click the copy icon to put the URL on your clipboard without opening the page.
+- **Edit** - click the pencil icon to change the title or URL.
+- **Delete** - click the trash icon to remove one link immediately.
+- **Delete all** - clears the list after a confirmation dialog.
+
+There is no undo for a single delete or for **DELETE ALL**. If a link matters, copy the URL somewhere else before deleting it.
+
+## Keeping the list manageable
+
+SaveBuddy is designed for a short list of links you actually use, not a permanent archive. A few habits keep it useful:
+
+- Delete links after you've used them.
+- Rename vague page titles into specific labels.
+- Use **DELETE ALL** when a project ends.
+- Keep long-term references in Chrome bookmarks or a dedicated bookmark manager.
+
+## Popup behavior
+
+- The popup closes when you click outside it, as with any Chrome extension popup.
+- Saving a link does not close the popup, so you can save several links in a row.
+- The list re-renders after every save, edit, or delete.
+- Everything is stored in `localStorage` under the key `myLinks`; there is no background sync.
+
+## If the popup looks empty
+
+A new install starts with no links. Add one with **SAVE LINK** or **SAVE TAB**. If you had links before and the list is empty, check that you are using the same Chrome profile and that the extension wasn't removed or reloaded from a different folder. See [FAQ](faq.md).

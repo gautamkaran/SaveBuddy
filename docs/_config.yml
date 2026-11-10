@@ -5,6 +5,10 @@
 title: SaveBuddy
 description: >-
   A lightweight Chrome extension for saving and organizing web links.
+lang: en
+
+# Used by jekyll-seo-tag for author metadata and structured data.
+author: Gautam Karan
 
 remote_theme: just-the-docs/just-the-docs
 
@@ -70,10 +74,9 @@ last_edit_time_format: "%b %e %Y at %I:%M %p"
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/gautamkaran/SaveBuddy"
-gh_edit_branch: "docs"
-# The site is built from the "docs" folder of the "docs" branch, so page paths
+gh_edit_branch: "main"
+# The site is built from the "docs" folder of the "main" branch, so page paths
 # are already relative to that folder; no source prefix is needed here.
-# If the docs are ever merged to "main", switch the branch above to "main".
 gh_edit_view_mode: "edit"
 
 # --- Plugins --------------------------------------------------------------
